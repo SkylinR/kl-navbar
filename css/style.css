@@ -67,6 +67,7 @@ body{
 .hamburger-toggle:hover{
   cursor:pointer;
 }
+
 .hamburger-toggle>.hamburger-ico{
   line-height:50px;
   color: #333;
@@ -132,6 +133,8 @@ body{
     display: none;
   }
 
+
+/*HOVER DROPDOWN*/
   .small-res-nav > .menu-right > .ul-links > .dropdown-btn{
     position: relative;
     overflow: hidden;
@@ -167,7 +170,38 @@ body{
   }
 
 
+/*CLICKABLE DROPDOWN*/
+  .small-res-nav > .menu-right > .ul-links > .dropdown-btn-click{
+    position: relative;
+    overflow: hidden;
+    min-height: 50px;
+  }
 
+  .small-res-nav > .menu-right > .ul-links > .dropdown-btn-focus{
+    background-color: #eeeeee;
+    cursor:pointer;
+    transition:0.3s;
+    outline:none;
+  }
+  
+  .small-res-nav > .menu-right > .ul-links > .dropdown-btn-click > .dropdown-ul{
+    list-style: none;
+    right: 0;
+    padding: 0;
+    background-color: #eee;
+    max-height:0;
+  }
+  
+  .small-res-nav > .menu-right > .ul-links > .dropdown-btn-click > .dropdown-ul > li{
+    white-space:nowrap ;
+    padding: 0 10px;
+  }
+  
+  .small-res-nav > .menu-right > .ul-links > .dropdown-btn-click > .dropdown-ul > li:hover{
+    background-color:#ddd;
+  }
+
+  
 
   /*MEDIUM MENU*/
   .med-res-nav{
@@ -206,12 +240,15 @@ body{
     font-size: 10px;
   }
 
+/*HOVER DROPDOWN*/
+
   .med-res-nav > .menu-right > .ul-links > .dropdown-btn{
     position: relative;
   }
 
   .med-res-nav > .menu-right > .ul-links > .dropdown-btn > .dropdown-ul{
     position: absolute;
+    min-width:100%;
     list-style:none;
     top: 50px;
     right: 0;
@@ -230,6 +267,38 @@ body{
 }
 
   .med-res-nav > .menu-right > .ul-links > .dropdown-btn > .dropdown-ul > li:hover{
+    background-color:#ddd;
+  }
+
+/*CLICKABLE DROPDOWN*/
+  .med-res-nav > .menu-right > .ul-links > .dropdown-btn-click{
+    position: relative;
+  }
+
+  .med-res-nav > .menu-right > .ul-links > .dropdown-btn-focus{
+  background-color: #eeeeee;
+  cursor:pointer;
+  transition:0.3s;
+  outline:none;
+}
+  
+  .med-res-nav > .menu-right > .ul-links > .dropdown-btn-click > .dropdown-ul{
+    position: absolute;
+    min-width:100%;
+    list-style:none;
+    top: 50px;
+    right: 0;
+    padding: 0;
+    display:none;
+    background-color: #eee;
+  }
+  
+  .med-res-nav > .menu-right > .ul-links > .dropdown-btn-click > .dropdown-ul > li{
+    white-space:nowrap ;
+    padding: 0 10px;
+  }
+  
+  .med-res-nav > .menu-right > .ul-links > .dropdown-btn-click > .dropdown-ul > li:hover{
     background-color:#ddd;
   }
 
@@ -269,6 +338,7 @@ body{
     padding: 2px 5px;
   }
 
+/*HOVER DROPDOWN*/
   .big-res-nav > .menu-right > .ul-links > .dropdown-btn{
     position: relative;
   }
@@ -276,11 +346,12 @@ body{
   .big-res-nav > .menu-right > .ul-links > .dropdown-btn > .dropdown-ul{
     position: absolute;
     top: 50px;
-    list-style:none;
+    list-style: none;
+    min-width: 100%;
     background-color: #eee;
     right: 0;
     padding: 0;
-    display:none;
+    display: none;
   }
 
   .big-res-nav > .menu-right > .ul-links > .dropdown-btn:hover > .dropdown-ul{
@@ -295,4 +366,36 @@ body{
   .big-res-nav > .menu-right > .ul-links > .dropdown-btn > .dropdown-ul > li:hover{
    background-color:#ddd;
 }
+
+/*CLICKABLE DROPDOWN*/
+  .big-res-nav > .menu-right > .ul-links > .dropdown-btn-click{
+    position: relative;
+  }
+
+  .big-res-nav > .menu-right > .ul-links > .dropdown-btn-focus{
+  background-color: #eeeeee;
+  cursor:pointer;
+  transition:0.3s;
+  outline:none;
+}
+
+  .big-res-nav > .menu-right > .ul-links > .dropdown-btn-click > .dropdown-ul{
+    position: absolute;
+    min-width: 100%;
+    top: 50px;
+    list-style: none;
+    background-color: #eee;
+    right: 0;
+    padding: 0;
+    display: none;
+  }
+
+  .big-res-nav > .menu-right > .ul-links > .dropdown-btn-click > .dropdown-ul > li{
+    white-space:nowrap ;
+    padding: 0 10px;
+  }
+
+  .big-res-nav > .menu-right > .ul-links > .dropdown-btn-click > .dropdown-ul > li:hover{
+    background-color:#ddd;
+  }
 
